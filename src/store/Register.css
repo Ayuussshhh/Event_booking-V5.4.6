@@ -1,8 +1,6 @@
-/* Register.css */
-
 /* Container for the registration form */
 .register-container {
-  max-width: 400px;
+  max-width: 450px;
   margin: 50px auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -17,7 +15,9 @@
   color: #333;
 }
 
-.register-container input {
+/* Styling for input fields and select dropdowns */
+.register-container input,
+.register-container select {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
@@ -25,12 +25,39 @@
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
+  background-color: #fff;
 }
 
 /* Focus state for input fields */
-.register-container input:focus {
+.register-container input:focus,
+.register-container select:focus {
   outline: none;
   border-color: #4CAF50;
+}
+
+/* Styling for the college name dropdown */
+.college-select-container {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.college-select-container label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Extra styling for 'Other' college input field */
+.other-college-input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 /* Register button styles */
@@ -48,31 +75,6 @@
 
 .register-button:hover {
   background-color: #45a049;
-}
-
-/* Google OAuth button container */
-.google-login-container {
-  margin-top: 20px;
-}
-
-/* Google OAuth button styles */
-.g-signin2 {
-  margin-top: 20px;
-  width: 100%;
-  padding: 14px;
-  background-color: #4285F4;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-}
-
-/* Hover effect for Google button */
-.g-signin2:hover {
-  background-color: #357ae8;
 }
 
 /* Payment button styles */
@@ -96,22 +98,10 @@
   background-color: #e64a19;
 }
 
-/* Styling for select input fields (Ticket Type and Quantity) */
-.ticket-select-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.ticket-select-container select {
-  width: 48%;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Styling for form fields and buttons */
-.register-container form {
-  margin-bottom: 30px;
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .register-container {
+    width: 90%;
+    padding: 15px;
+  }
 }
