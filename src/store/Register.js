@@ -80,7 +80,7 @@ const Register = () => {
                     type="text"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    placeholder="Username"
+                    placeholder="Name"
                     required
                 />
                 <input
