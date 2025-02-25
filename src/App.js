@@ -10,6 +10,7 @@ import Register from "../src/store/Register"; // Register component for registra
 import CheckoutSuccess from "./store/checkout-success";
 import CheckoutCancel from "./store/checkout-cancel";
 import PaymentPage from "./store/checkoutsession";
+import ProfilePage from "./pages/Profilepage";
 
 import Homepageevents from "./pages/Homepageevents";
 import Footer from "./pages/Footer";
@@ -94,6 +95,7 @@ const App = () => {
           <Route path="/checkout" element={<PaymentPage />} />
           <Route path="/checkout-success" element={<CheckoutSuccess />} />
           <Route path="/checkout-cancel" element={<CheckoutCancel />} />
+          <Route path="/profile" element={<ProfilePage />} />
           
           <Route path="/Timeline" element={<Timeline />} />
           <Route path="/Homepageevents" element={<Homepageevents />} />
