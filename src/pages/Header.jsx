@@ -30,8 +30,7 @@ const Header = ({ scrollToFooter }) => {
         <a href="/Timeline">EVENTS</a>
         <a href="/">WORKSHOPS</a>
         <a href="/AboutUs">ABOUT US</a>
-
-        <a href="/">REGISTER</a>
+        <a href="/profile">PROFILE</a>
       </nav>
 
       {/* Only render the back button if not on the home page */}
